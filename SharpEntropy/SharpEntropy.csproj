@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="SharpEntropySqlite\bin\**" />
+    <Compile Remove="SharpEntropySqlite\obj\**" />
+    <EmbeddedResource Remove="SharpEntropySqlite\bin\**" />
+    <EmbeddedResource Remove="SharpEntropySqlite\obj\**" />
+    <None Remove="SharpEntropySqlite\bin\**" />
+    <None Remove="SharpEntropySqlite\obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Data.SQLite" Version="2.2.4" />
     <PackageReference Include="System.Data.Common" Version="4.3.0" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.111" />
